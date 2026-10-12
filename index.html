@@ -1,179 +1,434 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Mehdi Lahlou – Profil</title>
+    <title>El Mehdi Lahlou – Ingénieur Firmware / Logiciel Embarqué</title>
+    <meta name="description" content="El Mehdi Lahlou, ingénieur Grenoble INP – Phelma (SEOC) : firmware C sur STM32 / ARM Cortex-M, FreeRTOS, bare metal, UART · SPI · I2C · BLE. Disponible immédiatement pour un CDI en logiciel embarqué.">
+    <meta property="og:title" content="El Mehdi Lahlou – Ingénieur Firmware / Logiciel Embarqué">
+    <meta property="og:description" content="C · STM32 · ARM Cortex-M · FreeRTOS · Bare Metal. Disponible immédiatement, mobile dans toute la France.">
+    <meta property="og:image" content="assets/img/mehdi.jpg">
+    <meta name="theme-color" content="#07090d">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2307090d'/><text x='50%' y='58%' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='15' font-weight='700' fill='%2335e0a6'>EL</text></svg>">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-            color: #222;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-        }
-
-        h1, h2 {
-            color: #003366;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .contact a {
-            color: #003366;
-            text-decoration: none;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 6px 20px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .small-title {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 600px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-<div class="container">
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"></div>
 
-    <h1>El Mehdi Lahlou</h1>
-    <p><strong>Étudiant ingénieur – Systèmes embarqués & Deep Learning</strong></p>
-
-    <div class="contact">
-        <p>
-            📞 <a href="tel:+33744479035">+33 7 44 47 90 35</a><br>
-            📧 <a href="mailto:el-mehdi.lahlou@grenoble-inp.org">el-mehdi.lahlou@grenoble-inp.org</a><br>
-            🔗 <a href="https://www.linkedin.com/in/el-mehdi-lahlou-new/" target="_blank">LinkedIn</a>
-        </p>
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#top" class="logo" aria-label="Accueil">
+            <span class="logo-mark">EL</span>
+            <span class="logo-text">El Mehdi Lahlou</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="#experience">Expérience</a>
+            <a href="#projets">Projets</a>
+            <a href="#competences">Compétences</a>
+            <a href="#parcours">Parcours</a>
+            <a href="assets/CV-El-Mehdi-Lahlou.pdf" target="_blank" rel="noopener" class="nav-cv">CV ↓</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span>
+        </button>
     </div>
+</header>
 
-    <!-- PROFIL -->
-    <div class="section">
-        <h2>Profil</h2>
-        <p>
-            Étudiant en ingénierie spécialisé en systèmes embarqués et microcontrôleurs,
-            expérimenté en FreeRTOS, programmation C et Python. 
-            Recherche un stage de fin d'études pour février 2026 dans le domaine du logiciel embarqué
-            ou du développement bas niveau.
-        </p>
-    </div>
+<main id="top">
 
-    <!-- FORMATION -->
-    <div class="section">
-        <h2>Formation</h2>
-        <p><strong>2024–2026</strong> – Diplôme d’ingénieur, Grenoble INP – Phelma, spécialité SEOC</p>
-        <p><strong>2022–2024</strong> – Classes préparatoires MP*, Lycée Fès (Maroc)</p>
-    </div>
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <p class="mono kicker reveal"><span class="dot"></span> Disponible immédiatement · CDI · Mobile toute la France</p>
+                <h1 class="reveal">El Mehdi<br><span class="grad">Lahlou</span></h1>
+                <p class="hero-role reveal mono">
+                    <span class="prompt">&gt;</span> <span id="typed">Ingénieur Firmware / Logiciel Embarqué</span><span class="caret"></span>
+                </p>
+                <p class="hero-pitch reveal">
+                    Ingénieur diplômé de Grenoble INP – Phelma (SEOC). Je développe du <strong>firmware C sur STM32 / ARM Cortex-M</strong>,
+                    en bare metal ou sous FreeRTOS : interruptions, DMA, UART, SPI, I²C, BLE, et surtout
+                    <strong>débogage sur cible</strong>, de l'oscilloscope au correctif.
+                </p>
+                <div class="hero-cta reveal">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets
+                        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="assets/CV-El-Mehdi-Lahlou.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Mon CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/el-mehdi-lahlou-new/" target="_blank" rel="noopener" class="btn-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                    </a>
+                </div>
+            </div>
 
-    <!-- COMPÉTENCES -->
-    <div class="section">
-        <h2>Compétences techniques</h2>
-
-        <p class="small-title">Langages</p>
-        <div class="skills-grid">
-            <div>C</div><div>Python</div>
-            <div>Java</div><div>VHDL</div>
-            <div>Shell/Bash</div>
+            <div class="hero-visual reveal">
+                <div class="portrait">
+                    <div class="portrait-ring"></div>
+                    <img src="assets/img/mehdi.jpg" alt="Portrait d'El Mehdi Lahlou" width="778" height="778">
+                </div>
+                <div class="chip-float chip-a mono"><span class="led"></span>STM32 · Cortex-M33</div>
+                <div class="chip-float chip-b mono">FreeRTOS</div>
+                <div class="chip-float chip-c mono">UART · SPI · I²C · BLE</div>
+            </div>
         </div>
 
-        <p class="small-title">Outils</p>
-        <div class="skills-grid">
-            <div>Git</div><div>VS Code</div>
-            <div>KiCad</div><div>LTspice</div>
-            <div>MATLAB/Simulink</div><div>ModelSim</div>
-            <div>MkDocs</div><div>CUDA</div>
-            <div>TensorBoard</div>
+        <div class="container">
+            <ul class="stats reveal">
+                <li><span class="stat-num">−60<small>%</small></span><span class="stat-label">de dispersion<br>recherche du Nord</span></li>
+                <li><span class="stat-num">6<small>mois</small></span><span class="stat-label">PFE firmware<br>Tronics – TDK Group</span></li>
+                <li><span class="stat-num">3</span><span class="stat-label">architectures<br>STM32 · NXP · RISC-V</span></li>
+                <li><span class="stat-num">C</span><span class="stat-label">bare metal & FreeRTOS<br>+ Python pour les outils</span></li>
+            </ul>
         </div>
 
-        <p class="small-title">Domaines</p>
-        <ul>
-            <li>Deep Learning (CNN / Transformers)</li>
-            <li>Électronique numérique</li>
-            <li>FreeRTOS & systèmes temps réel</li>
-            <li>Programmation multitâche / multithread</li>
-            <li>Architecture SoC</li>
-            <li>Systèmes Linux & Windows</li>
-        </ul>
+        <a href="#experience" class="scroll-hint" aria-label="Défiler"><span></span></a>
+    </section>
+
+    <!-- ========== EXPÉRIENCE ========== -->
+    <section class="section" id="experience">
+        <div class="container">
+            <header class="section-head reveal">
+                <p class="mono section-index">01 — Expérience</p>
+                <h2>Du firmware validé sur cible</h2>
+            </header>
+
+            <div class="timeline">
+                <!-- TRONICS -->
+                <article class="xp-card featured reveal spot">
+                    <div class="xp-media">
+                        <picture>
+                            <source srcset="assets/img/tronics.webp" type="image/webp">
+                            <img src="assets/img/tronics.jpg" alt="Démonstrateur de recherche du Nord : carte STM32 et gyroscopes MEMS sur plateau rotatif" loading="lazy">
+                        </picture>
+                        <div class="metric">
+                            <span class="mono metric-label">Écart-type · 20 essais de recherche du Nord</span>
+                            <span class="metric-value">0,5° <span class="arrow">→</span> <strong>0,201°</strong></span>
+                            <span class="mono metric-sub">≈ −60 % grâce à deux gyroscopes</span>
+                        </div>
+                    </div>
+                    <div class="xp-body">
+                        <div class="xp-meta mono">
+                            <span>Mars 2026 – Août 2026 · 6 mois</span>
+                            <span>Crolles, France</span>
+                        </div>
+                        <h3>PFE – Développement firmware d'un démonstrateur embarqué</h3>
+                        <p class="xp-company">Tronics Microsystems – TDK Group</p>
+                        <ul class="bullets">
+                            <li>Firmware C avec <strong>STM32 HAL</strong> sur <strong>STM32H563 (Cortex-M33)</strong> : acquisition et traitement des données de deux gyroscopes, avec DataReady, interruptions <strong>EXTI</strong> et <strong>DMA</strong>.</li>
+                            <li>Échanges <strong>I²C</strong> avec la jauge de batterie BQ27427.</li>
+                            <li>Pilotage du module <strong>BLE</strong> u-blox ANNA-B412 par commandes AT via <strong>UART / RTS-CTS</strong>.</li>
+                            <li>Analyse et correction d'anomalies en <strong>débogage sur cible</strong> : ST-LINK, oscilloscope, analyseur logique, multimètre.</li>
+                            <li>Tests fonctionnels et de robustesse, notamment sur la communication BLE.</li>
+                            <li>Modification du schéma électronique sous <strong>Altium Designer</strong>.</li>
+                            <li><strong>IHM Python</strong> pour piloter les acquisitions, visualiser et analyser les mesures.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>C</span><span>STM32 HAL</span><span>Cortex-M33</span><span>EXTI · DMA</span><span>I²C</span><span>UART</span><span>BLE</span><span>ST-LINK</span><span>Altium</span><span>Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- LIG -->
+                <article class="xp-card reveal spot">
+                    <div class="xp-body">
+                        <div class="xp-meta mono">
+                            <span>Juin 2025 – Sept. 2025 · 4 mois</span>
+                            <span>Grenoble, France</span>
+                        </div>
+                        <h3>Stage ingénieur – Développement, tests et validation logicielle</h3>
+                        <p class="xp-company">LIG – Laboratoire d'Informatique de Grenoble</p>
+                        <ul class="bullets">
+                            <li>Amélioration des packages Python <strong>VideoIO</strong> et <strong>COCOR</strong> : tests fonctionnels, correction d'anomalies et documentation technique sous MkDocs.</li>
+                            <li>Préparation de versions sur <strong>TestPyPI</strong>.</li>
+                            <li>Implémentation de couches <strong>SWRIT</strong> (RotConv, Transformer) pour rendre des modèles de Deep Learning invariants aux rotations, puis tests et validation avec PyTorch et TensorBoard.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Python</span><span>Tests</span><span>PyTorch</span><span>TensorBoard</span><span>MkDocs</span><span>TestPyPI</span><span>Git</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section class="section" id="projets">
+        <div class="container">
+            <header class="section-head reveal">
+                <p class="mono section-index">02 — Projets</p>
+                <h2>Du transistor au noyau</h2>
+            </header>
+
+            <!-- Projet phare -->
+            <article class="project-hero reveal spot">
+                <div class="ph-text">
+                    <p class="mono ph-label">Projet phare · Oct. 2025 – Janv. 2026</p>
+                    <h3>Contrôle-commande d'un véhicule autonome</h3>
+                    <p class="ph-sub">C · FreeRTOS · Microcontrôleur NXP</p>
+                    <ul class="bullets">
+                        <li><strong>Trois tâches FreeRTOS</strong> : acquisition et traitement d'un capteur linéaire, asservissement de la direction, contrôle de la vitesse.</li>
+                        <li>Multitâche et <strong>synchronisation</strong> entre tâches temps réel.</li>
+                        <li><strong>Correcteur PI</strong> et pilotage des moteurs par <strong>PWM</strong>.</li>
+                        <li>Intégration et validation sur cible, sur piste réelle.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>C</span><span>FreeRTOS</span><span>NXP</span><span>PI</span><span>PWM</span><span>Temps réel</span>
+                    </div>
+                    <button class="btn btn-primary play-btn" data-video="assets/video/vehicule-piste.mp4" data-poster="assets/video/vehicule-piste-poster.jpg">
+                        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                        Voir la démo sur piste
+                    </button>
+                </div>
+                <div class="ph-visual">
+                    <div class="ph-orbit" aria-hidden="true"></div>
+                    <img src="assets/img/vehicule.png" alt="Véhicule autonome avec caméra linéaire sur mât" loading="lazy">
+                    <div class="phone">
+                        <video src="assets/video/vehicule-piste.mp4" poster="assets/video/vehicule-piste-poster.jpg" muted loop playsinline preload="none" aria-label="Le véhicule suit la piste en autonomie"></video>
+                        <span class="phone-live mono"><span class="led red"></span>LIVE</span>
+                    </div>
+                </div>
+            </article>
+
+            <div class="filters reveal" role="tablist" aria-label="Filtrer les projets">
+                <button class="filter active" data-filter="all">Tous</button>
+                <button class="filter" data-filter="systeme">Noyau & bas niveau</button>
+                <button class="filter" data-filter="hardware">Électronique numérique</button>
+                <button class="filter" data-filter="algo">C performant & mémoire</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card reveal spot" data-cat="systeme">
+                    <div class="pc-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+                    </div>
+                    <p class="mono pc-date">Oct. 2024 – Déc. 2024</p>
+                    <h3>Noyau minimal RISC-V 64 bits</h3>
+                    <p class="pc-desc">Développement en C bas niveau d'un noyau minimal pour architecture RISC-V 64 bits.</p>
+                    <ul class="bullets small">
+                        <li>Multitâche, ordonnancement, interruptions et horloge système.</li>
+                        <li>Pilotes et interfaces matérielles (écran, console).</li>
+                        <li>Interactions entre architecture processeur, mémoire et logiciel bas niveau, avec débogage sous QEMU.</li>
+                    </ul>
+                    <p class="pc-why"><span class="mono">// embarqué</span> Ce que fait un RTOS, écrit à la main : ordonnanceur, interruptions, pilotes.</p>
+                    <div class="tags"><span>C</span><span>RISC-V 64</span><span>QEMU</span><span>Kernel</span></div>
+                </article>
+
+                <article class="project-card reveal spot" data-cat="systeme">
+                    <div class="pc-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7" /><circle cx="18" cy="16" r="3"/><path d="M20.2 18.2 22 20"/></svg>
+                    </div>
+                    <p class="mono pc-date">Sept. 2025 – 2026</p>
+                    <h3>ODB – On Demand Buffer</h3>
+                    <p class="pc-desc">Protocole réseau et bibliothèque système optimisant les transferts de données dans des architectures multi-tiers.</p>
+                    <ul class="bullets small">
+                        <li>Transfert <strong>différé</strong> basé sur <code>LD_PRELOAD</code> et <code>mprotect</code> : les données ne transitent qu'à la demande.</li>
+                        <li>Système de mémoire distante et mesure des gains de performance.</li>
+                        <li>Chaîne de tests pour la fiabilité et la maintenabilité.</li>
+                    </ul>
+                    <p class="pc-why"><span class="mono">// embarqué</span> Gestion mémoire au niveau de la MMU (<code>mprotect</code>) et communication réseau en C.</p>
+                    <div class="tags"><span>C</span><span>TCP</span><span>Linux</span><span>Mémoire virtuelle</span></div>
+                    <p class="pc-team mono">Projet d'équipe · 6 personnes</p>
+                </article>
+
+                <article class="project-card reveal spot" data-cat="hardware">
+                    <div class="pc-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M2 12h3l2-6 3 12 3-9 2 5 2-2h5"/></svg>
+                    </div>
+                    <p class="mono pc-date">Fév. 2025 – Mars 2025</p>
+                    <h3>Filtre numérique FIR – ASIC</h3>
+                    <p class="pc-desc">Réalisation complète d'un filtre FIR à 32 coefficients, du VHDL jusqu'au placement-routage.</p>
+                    <ul class="bullets small">
+                        <li>Modélisation VHDL (FSM) et simulation fonctionnelle sous ModelSim.</li>
+                        <li>Synthèse sous Design Vision.</li>
+                        <li>Placement-routage ASIC avec Cadence Innovus et analyse des performances.</li>
+                    </ul>
+                    <p class="pc-why"><span class="mono">// embarqué</span> Traitement du signal côté matériel : comprendre le silicium sur lequel tourne le firmware.</p>
+                    <div class="tags"><span>VHDL</span><span>ModelSim</span><span>Design Vision</span><span>Innovus</span></div>
+                    <p class="pc-team mono">Binôme</p>
+                </article>
+
+                <article class="project-card reveal spot" data-cat="algo">
+                    <div class="pc-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h9"/><path d="m15 17 2 2 4-4"/></svg>
+                    </div>
+                    <p class="mono pc-date">Oct. 2024 – Déc. 2024</p>
+                    <h3>Vérificateur orthographique en C</h3>
+                    <p class="pc-desc">Comparaison de quatre structures de données pour la recherche de mots.</p>
+                    <ul class="bullets small">
+                        <li>Tableau dynamique, table de hachage, trie, suffix tree.</li>
+                        <li>Analyse de performance, optimisation mémoire, validation Valgrind.</li>
+                    </ul>
+                    <p class="pc-why"><span class="mono">// embarqué</span> Contraintes mémoire et zéro fuite : les réflexes d'un firmware fiable.</p>
+                    <div class="tags"><span>C</span><span>Structures de données</span><span>Valgrind</span></div>
+                </article>
+
+                <article class="project-card reveal spot" data-cat="algo">
+                    <div class="pc-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="12" cy="10" r="2"/><path d="M7 6h10M12 12v4M6.5 7.5l4 1.5"/></svg>
+                    </div>
+                    <p class="mono pc-date">Avr. 2024 – Mai 2024</p>
+                    <h3>Arbres couvrants minimaux</h3>
+                    <p class="pc-desc">Implémentation et comparaison de Prim et Kruskal sur de très grands graphes.</p>
+                    <ul class="bullets small">
+                        <li>Algorithmes de Prim et Kruskal en C.</li>
+                        <li>Tests sur des graphes de plus de 435&nbsp;000 nœuds.</li>
+                    </ul>
+                    <p class="pc-why"><span class="mono">// embarqué</span> Complexité et optimisation en C, essentielles quand les ressources sont limitées.</p>
+                    <div class="tags"><span>C</span><span>Graphes</span><span>Optimisation</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section class="section" id="competences">
+        <div class="container">
+            <header class="section-head reveal">
+                <p class="mono section-index">03 — Compétences</p>
+                <h2>Ma boîte à outils</h2>
+            </header>
+
+            <div class="skills">
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">01</span> Développement embarqué</h3>
+                    <div class="chips">
+                        <span class="hl">C</span><span>C++ (bases)</span><span>STM32 HAL</span><span>Bare metal</span><span>Firmware</span><span>Bas niveau</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">02</span> Microcontrôleurs & temps réel</h3>
+                    <div class="chips">
+                        <span class="hl">STM32</span><span>ARM Cortex-M</span><span>NXP</span><span class="hl">FreeRTOS</span>
+                        <span>Interruptions · EXTI</span><span>DMA</span><span>Timers</span><span>GPIO</span><span>Multitâche</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">03</span> Interfaces & protocoles</h3>
+                    <div class="chips">
+                        <span>UART</span><span>SPI</span><span>I²C</span><span>BLE</span><span>PWM</span><span>CAN (notions)</span><span>TCP/IP</span><span>UDP</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">04</span> Débogage & électronique</h3>
+                    <div class="chips">
+                        <span>ST-LINK · SWD</span><span>Oscilloscope</span><span>Analyseur logique</span><span>Multimètre</span>
+                        <span>Schémas & datasheets</span><span>Altium Designer</span><span>KiCad</span><span>LTspice</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">05</span> Tests & validation</h3>
+                    <div class="chips">
+                        <span>Tests fonctionnels</span><span>Tests d'intégration</span><span>Tests de robustesse</span>
+                        <span>Validation sur cible</span><span>Analyse de logs</span><span>Correction d'anomalies</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">06</span> Contrôle & acquisition</h3>
+                    <div class="chips">
+                        <span>Régulation PI</span><span>Contrôle moteur</span><span>Acquisition capteurs</span><span>Traitement du signal</span><span>Analyse statistique</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">07</span> Outils</h3>
+                    <div class="chips">
+                        <span>Git</span><span>GitLab · GitLab CI</span><span>GitHub</span><span>STM32CubeIDE</span><span>MCUXpresso</span><span>Linux</span><span>QEMU</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal spot">
+                    <h3><span class="mono">08</span> Complément</h3>
+                    <div class="chips">
+                        <span>Python</span><span>NumPy</span><span>Pandas</span><span>PyTorch</span><span>TensorBoard</span><span>VHDL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PARCOURS ========== -->
+    <section class="section" id="parcours">
+        <div class="container two-col">
+            <div>
+                <header class="section-head reveal">
+                    <p class="mono section-index">04 — Formation</p>
+                    <h2>Parcours</h2>
+                </header>
+                <ol class="edu">
+                    <li class="reveal">
+                        <span class="mono edu-date">2023 – 2026 · Grenoble</span>
+                        <h3>Diplôme d'ingénieur – Grenoble INP, Phelma</h3>
+                        <p>Systèmes embarqués et objets connectés (SEOC).</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="mono edu-date">2021 – 2023 · Fès, Maroc</span>
+                        <h3>CPGE – MPSI / MP*</h3>
+                        <p>Mathématiques et physique.</p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <header class="section-head reveal">
+                    <p class="mono section-index">05 — Langues</p>
+                    <h2>Langues</h2>
+                </header>
+                <ul class="langs">
+                    <li class="reveal"><span>Arabe</span><span class="mono">Langue maternelle</span><i style="--w:100%"></i></li>
+                    <li class="reveal"><span>Français</span><span class="mono">Bilingue</span><i style="--w:95%"></i></li>
+                    <li class="reveal"><span>Anglais</span><span class="mono">B2</span><i style="--w:70%"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-card reveal spot">
+                <p class="mono section-index">06 — Contact</p>
+                <h2>Je cherche un CDI<br><span class="grad">en logiciel embarqué.</span></h2>
+                <p class="contact-sub">Disponible immédiatement et mobile dans toute la France. Un poste firmware, une question sur un projet ? Écrivez-moi.</p>
+                <div class="contact-actions">
+                    <button class="email-pill mono" id="copyEmail" data-email="lhmehdio@gmail.com">
+                        <span>lhmehdio@gmail.com</span>
+                        <span class="copy-label">Copier</span>
+                    </button>
+                    <a class="btn btn-primary" href="mailto:lhmehdio@gmail.com">Envoyer un e-mail</a>
+                    <a class="btn btn-ghost" href="assets/CV-El-Mehdi-Lahlou.pdf" target="_blank" rel="noopener">Télécharger le CV</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/el-mehdi-lahlou-new/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn btn-ghost" href="tel:+33744479035">+33 7 44 47 90 35</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner mono">
+        <span>© <span id="year">2026</span> El Mehdi Lahlou</span>
+        <span>Conçu & codé à la main · Grenoble</span>
     </div>
+</footer>
 
-    <!-- EXPERIENCE -->
-    <div class="section">
-        <h2>Expérience professionnelle</h2>
-
-        <p><strong>Stage d’ingénieur – Développement logiciel</strong> — LIG, Grenoble (Juin–Sept 2025)</p>
-        <ul>
-            <li>Développement de logiciels modulaires en Python pour traitement vidéo et manipulation de datasets.</li>
-            <li>Optimisation de routines complexes et analyse de performance.</li>
-            <li>Documentation, versioning Git, publication PyPI, MkDocs.</li>
-        </ul>
+<!-- Video modal -->
+<div class="modal" id="videoModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Démo vidéo">
+        <button class="modal-close" data-close aria-label="Fermer">&times;</button>
+        <video id="modalVideo" controls playsinline></video>
     </div>
-
-    <!-- PROJETS -->
-    <div class="section">
-        <h2>Projets académiques</h2>
-
-        <p><strong>Véhicule autonome sous FreeRTOS</strong> — Oct 2025 – Jan 2026</p>
-        <ul>
-            <li>Contrôle-commande : asservissement moteur & pilotage direction.</li>
-            <li>Multitâche sous FreeRTOS avec exécution temps réel.</li>
-            <li>Traitement embarqué d’images pour suivi de piste.</li>
-        </ul>
-
-        <p><strong>Filtre numérique FIR (32 coefficients) – VHDL</strong> — Fév–Mars 2025</p>
-        <ul>
-            <li>Implémentation VHDL et FSM.</li>
-            <li>Simulation ModelSim, synthèse Design Vision.</li>
-            <li>Placement-routage ASIC (Cadence Innovus).</li>
-        </ul>
-
-        <p><strong>Vérificateur orthographique en C</strong> — Oct 2024 – Déc 2024</p>
-        <ul>
-            <li>Implémentation de 4 structures : tableau dynamique, table de hachage, trie, suffix tree.</li>
-            <li>Analyse performance, optimisation mémoire, validation Valgrind.</li>
-        </ul>
-
-        <p><strong>Arbres couvrants minimaux – Optimisation</strong> — Avr–Mai 2024</p>
-        <ul>
-            <li>Algorithmes de Prim & Kruskal en C.</li>
-            <li>Test sur graphes 435k+ nœuds.</li>
-            <li>Analyse comparative.</li>
-        </ul>
-    </div>
-
-    <!-- LANGUES -->
-    <div class="section">
-        <h2>Langues</h2>
-        <ul>
-            <li>Français : bilingue</li>
-            <li>Anglais : intermédiaire</li>
-            <li>Arabe : langue maternelle</li>
-        </ul>
-    </div>
-
 </div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
