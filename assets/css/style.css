@@ -271,7 +271,7 @@ h3 { font-family: var(--display); letter-spacing: -.015em; }
 .xp-card:hover { transform: translateY(-4px); }
 .xp-card.featured { display: grid; grid-template-columns: 1fr 1.2fr; }
 .xp-media {
-    position: relative; background: #000; display: grid; place-items: center; padding: 28px 28px 120px; min-height: 320px;
+    position: relative; background: #000; display: grid; place-items: center; padding: 28px 28px 196px; min-height: 320px;
     overflow: hidden;
 }
 .xp-media::after {
@@ -285,9 +285,12 @@ h3 { font-family: var(--display); letter-spacing: -.015em; }
     backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 }
 .metric-label { font-size: 11px; color: var(--muted); }
+.metric-comparison { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px; }
+.metric-result { display: grid; gap: 2px; }
+.metric-result:last-child { text-align: right; }
+.metric-comparison > .arrow { color: var(--muted); font-size: 1.2rem; }
 .metric-value { font-family: var(--display); font-size: 1.6rem; font-weight: 600; color: var(--muted); }
 .metric-value strong { color: var(--accent); }
-.metric-value .arrow { color: var(--dim); font-size: .8em; }
 .metric-sub { font-size: 11.5px; color: var(--accent-2); }
 .xp-media img { width: 100%; height: 100%; object-fit: contain; transition: transform .8s var(--ease); }
 .xp-card:hover .xp-media img { transform: scale(1.04); }
